@@ -1,0 +1,43 @@
+<web-app>
+<servlet>
+	<servlet-name>SendRedirectServlet</servlet-name>
+	<servlet-class>SendRedirectServlet</servlet-class>
+</servlet>
+<context-param>
+	<param-name>driver_url</param-name>
+	<param-value>jdbc:mysql://localhost/sms?autoReconnect=true</param-value>
+</context-param>
+<context-param>
+	<param-name>driver</param-name>
+	<param-value>com.mysql.jdbc.Driver</param-value>
+</context-param>
+<context-param>
+	<param-name>user</param-name>
+	<param-value>root</param-value>
+</context-param>
+<context-param>
+	<param-name>pass</param-name>
+	<param-value>hello123</param-value>
+</context-param>
+<servlet-mapping>
+	<servlet-name>SendRedirectServlet</servlet-name>
+	<url-pattern>/param</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>WelcomeServlet</servlet-name>
+	<servlet-class>WelcomeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>WelcomeServlet</servlet-name>
+	<url-pattern>/wel</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>ErrorServlet</servlet-name>
+	<servlet-class>ErrorServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ErrorServlet</servlet-name>
+	<url-pattern>/err</url-pattern>
+</servlet-mapping>
+
+</web-app>

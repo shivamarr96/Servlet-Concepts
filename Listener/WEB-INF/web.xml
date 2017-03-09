@@ -1,0 +1,19 @@
+<web-app>
+<servlet>
+	<servlet-name>RequestListenerServlet</servlet-name>
+	<servlet-class>RequestListenerServlet</servlet-class>
+</servlet>
+<listener>
+	<listener-class>MyRequestListener</listener-class>
+</listener>
+<listener>
+	<listener-class>MyListener</listener-class>
+</listener>
+<listener>
+	<listener-class>MySessionListener</listener-class>
+</listener>
+<servlet-mapping>
+	<servlet-name>RequestListenerServlet</servlet-name>
+	<url-pattern>/listener</url-pattern>
+</servlet-mapping>
+</web-app>

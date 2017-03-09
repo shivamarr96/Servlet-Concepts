@@ -1,0 +1,26 @@
+<web-app>
+<servlet>
+	<servlet-name>ContextParamServlet</servlet-name>
+	<servlet-class>ContextParamServlet</servlet-class>
+</servlet>
+<context-param>
+	<param-name>driver_url</param-name>
+	<param-value>jdbc:mysql://localhost/sms?autoReconnect=true</param-value>
+</context-param>
+<context-param>
+	<param-name>driver</param-name>
+	<param-value>com.mysql.jdbc.Driver</param-value>
+</context-param>
+<context-param>
+	<param-name>user</param-name>
+	<param-value>root</param-value>
+</context-param>
+<context-param>
+	<param-name>pass</param-name>
+	<param-value>hello123</param-value>
+</context-param>
+<servlet-mapping>
+	<servlet-name>ContextParamServlet</servlet-name>
+	<url-pattern>/param</url-pattern>
+</servlet-mapping>
+</web-app>
